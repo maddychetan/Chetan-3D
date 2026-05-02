@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetan Holiyappa - 3D Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading 3D Resume...</p>
+    </div>
+    
+    <div id="canvas-container"></div>
+    
+    <div id="ui-overlay">
+        <header class="header">
+            <h1 class="name-title">CHETAN HOLIYAPPA</h1>
+            <div class="contact-info">
+                <span class="contact-item">📱 +91-7338025205</span>
+                <span class="contact-item">✉️ Chaytonah@gmail.com</span>
+                <span class="contact-item">📍 Bengaluru</span>
+                <a href="https://www.linkedin.com/in/caholiyappa/" class="contact-item linkedin" target="_blank">LinkedIn</a>
+                <a href="https://maddychetan.github.io/chetan-ai-talent-portfolio/#" class="contact-item portfolio" target="_blank">Portfolio</a>
+            </div>
+        </header>
+        
+        <div id="info-panel">
+            <div class="panel-section active" data-section="profile">
+                <h2>Professional Profile</h2>
+                <p>Strategic Talent Partner with 10+ years of experience in product, SaaS, and technology hiring, with a strong focus on building scalable and efficient hiring practices.</p>
+                <p>In recent experience, have worked on improving recruitment workflows using automation and AI-assisted tools, including hands-on exposure to platforms like Juicebox and ChatGPT for supporting sourcing, screening, and candidate engagement.</p>
+                <p>Known for combining market intelligence, stakeholder collaboration, and process optimization to deliver consistent hiring outcomes across global teams.</p>
+            </div>
+            
+            <div class="panel-section" data-section="experience">
+                <h2>Career Highlights</h2>
+                <div class="highlight-item">
+                    <h3>Product Hiring & Scalable Recruitment</h3>
+                    <p>Built and scaled hiring pipelines for product, engineering, and design roles across SaaS and technology-driven organizations.</p>
+                    <p>Delivered consistent hiring outcomes by aligning sourcing strategies with business needs and talent market insights.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Automation & Process Optimization</h3>
+                    <p>Implemented Lever ATS automation and structured workflows, reducing manual recruiter effort by ~40% and improving hiring efficiency.</p>
+                    <p>Streamlined recruitment processes across sourcing, screening, and coordination stages to enhance speed and consistency.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>AI-Assisted Hiring Practices</h3>
+                    <p>Explored and applied AI-assisted tools (Juicebox, ChatGPT) to support recruiter workflows such as outreach drafting, screening support, and follow-ups.</p>
+                    <p>Worked on workflow-based automation approaches (POC level) to improve efficiency in repetitive recruitment tasks.</p>
+                </div>
+            </div>
+            
+            <div class="panel-section" data-section="achievements">
+                <h2>Noteworthy Milestones</h2>
+                <ul class="achievements-list">
+                    <li>Recognized as the Most Promising New Talent (MPNT) at TomTom Jul 2021</li>
+                    <li>Recipient of "Going the Extra Mile Award" – KellyOCG in Aug 2020 for displaying a high level of determination and execution discipline</li>
+                    <li>Appreciated with the Recruiter Honor Award at Sunrise Systems, Inc Jun 2018</li>
+                    <li>Winner of IBM Great Mind Challenge 2008-2009</li>
+                </ul>
+            </div>
+            
+            <div class="panel-section" data-section="skills">
+                <h2>Core Competencies</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">Talent Acquisition</span>
+                    <span class="skill-tag">SaaS Hiring</span>
+                    <span class="skill-tag">ATS Automation</span>
+                    <span class="skill-tag">AI-Assisted Recruitment</span>
+                    <span class="skill-tag">Stakeholder Management</span>
+                    <span class="skill-tag">Data-Driven Hiring</span>
+                    <span class="skill-tag">Employer Branding</span>
+                    <span class="skill-tag">Diversity & Inclusion</span>
+                    <span class="skill-tag">Market Intelligence</span>
+                    <span class="skill-tag">Process Optimization</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="section-nav">
+            <button class="nav-btn active" data-target="profile">Profile</button>
+            <button class="nav-btn" data-target="experience">Experience</button>
+            <button class="nav-btn" data-target="achievements">Achievements</button>
+            <button class="nav-btn" data-target="skills">Skills</button>
+            <button class="nav-btn" data-target="education">Education</button>
+        </nav>
+        
+        <div class="controls-hint">
+            <p>🖱️ Click & Drag to Rotate | 🖱️ Scroll to Zoom | Right-click to Pan</p>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
